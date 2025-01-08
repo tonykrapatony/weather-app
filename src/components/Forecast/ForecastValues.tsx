@@ -11,24 +11,24 @@ const ForecastValues: FC<ForecastValuesProps> = ({ values }) => {
     <>
       <div className="flex items-center gap-1">
         {values.main.temp > 0 ?
-          <img src="/assets/images/hot_icon.png" alt="" width={40} /> :
-          <img src="/assets/images/cold_icon.png" alt="" width={40} />
+          <img src={`${import.meta.env.BASE_URL}/assets/images/hot_icon.png`} alt="" width={40} /> :
+          <img src={`${import.meta.env.BASE_URL}/assets/images/cold_icon.png`} alt="" width={40} />
         }
         <p>Temperature: {values.main.temp} &deg;C</p>
       </div>
       <div className="flex items-center gap-1">
         {values.main.feels_like > 0 ?
-          <img src="/assets/images/hot_icon.png" alt="" width={40} /> :
-          <img src="/assets/images/cold_icon.png" alt="" width={40} />
+          <img src={`${import.meta.env.BASE_URL}/assets/images/hot_icon.png`} alt="" width={40} /> :
+          <img src={`${import.meta.env.BASE_URL}/assets/images/cold_icon.png`} alt="" width={40} />
         }
         <p>Feels like: {values.main.feels_like} &deg;C</p>
       </div>
       <div className="flex items-center gap-1">
-        <img src="/assets/images/humidity_icon.png" alt="" width={40} />
+        <img src={`${import.meta.env.BASE_URL}/assets/images/humidity_icon.png`} alt="" width={40} />
         <p>Humidity: {values.main.humidity} %</p>
       </div>
       <div className="flex items-center gap-1">
-        <img src="/assets/images/wind_icon.png" alt="" width={40} />
+        <img src={`${import.meta.env.BASE_URL}/assets/images/wind_icon.png`} alt="" width={40} />
         <p>Wind:</p>
       </div>
       <p className='pl-2'>speed: {values.wind.speed} meter/sec</p>

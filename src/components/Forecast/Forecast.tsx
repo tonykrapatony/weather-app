@@ -21,19 +21,19 @@ const Forecast: FC = () => {
             <div>
               <div className="flex items-center gap-1">
                 <p className='text-3xl'>{forecast?.city?.name}</p>
-                <img src="/assets/images/location_icon.png" alt="" width={20}/>
+                <img src={`${import.meta.env.BASE_URL}/assets/images/location_icon.png`} alt="" width={20}/>
               </div>
               <p className='text-lg'>{new Date().toLocaleString('ua-UK', { month: 'numeric', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', })}</p>
-              <img src={`/assets/images/${weather.weather[0].icon}.png`} alt="" />
+              <img src={`${import.meta.env.BASE_URL}/assets/images/${weather.weather[0].icon}.png`} alt="" />
             </div>
             <div className='flex flex-col gap-2'>
               <ForecastValues values={weather}/>
               <div className="flex items-center gap-1">
-                <img src="/assets/images/sunrise_icon.png" alt="" width={40}/>
+                <img src={`${import.meta.env.BASE_URL}/assets/images/sunrise_icon.png`} alt="" width={40}/>
                 <p>Sunrise {new Date(forecast?.city?.sunrise).toLocaleTimeString()}</p>
               </div>
               <div className="flex items-center gap-1">
-                <img src="/assets/images/sunset_icon.png" alt="" width={40}/>
+                <img src={`${import.meta.env.BASE_URL}/assets/images/sunset_icon.png`} alt="" width={40}/>
                 <p>Sunset {new Date(forecast?.city?.sunset).toLocaleTimeString()}</p>
               </div>
             </div>

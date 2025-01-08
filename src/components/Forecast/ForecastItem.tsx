@@ -56,6 +56,9 @@ const Item: FC<ForecastItemProps> = ({ forecastItem, date, activeDate }) => {
                   hour: 'numeric',
                   minute: 'numeric',
                 })}</p>
+                <div className="flex items-center gap-1">
+                  <img src={`${import.meta.env.BASE_URL}/assets/images/${item.weather[0].icon}.png`} alt="" />
+                </div>
                 <ForecastValues values={item} />
               </SwiperSlide>
             ))}
