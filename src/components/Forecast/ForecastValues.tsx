@@ -34,7 +34,7 @@ const ForecastValues: FC<ForecastValuesProps> = ({ values }) => {
       <p className='pl-2'>speed: {values.wind.speed} meter/sec</p>
       <div className='flex gap-2'>
         <p className='pl-2'>direction: {getWindDirection(values.wind.deg)}</p>
-        <img style={{ transform: `rotate(${values.wind.deg}deg)` }} src="/assets/images/arrow_icon.png" alt="" width={15} height={15} />
+        <img style={{ transform: `rotate(${values.wind.deg}deg)` }} src={`${import.meta.env.BASE_URL}/assets/images/arrow_icon.png`} alt="" width={15} height={15} />
       </div>
     </>
   )
