@@ -1,4 +1,7 @@
-const Header = () => {
+import { FC } from 'react'
+
+
+const Header:FC = () => {
   return (
     <header className='flex items-center gap-2 h-20 px-5 py-3 bg-blueLight'>
     <a href="/" className='flex items-center gap-2'>

@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef } from 'react'
+import { FC, useEffect, useRef } from 'react'
 import { Option } from '../../types';
 
 type GeoListProps = {
